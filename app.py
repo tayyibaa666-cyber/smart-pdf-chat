@@ -276,6 +276,29 @@ st.markdown("""
     p {
         color: #111827 !important;
     }
+    /* FORCE chat input typed text to be visible */
+div[data-testid="stChatInput"] textarea,
+div[data-testid="stChatInput"] input {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important; /* important for some browsers */
+  caret-color: #000000 !important;
+  opacity: 1 !important;
+}
+
+/* placeholder visible */
+div[data-testid="stChatInput"] textarea::placeholder,
+div[data-testid="stChatInput"] input::placeholder {
+  color: #9CA3AF !important;
+  -webkit-text-fill-color: #9CA3AF !important;
+  opacity: 1 !important;
+}
+
+/* ensure background is white */
+div[data-testid="stChatInput"] textarea,
+div[data-testid="stChatInput"] input {
+  background: #ffffff !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -431,4 +454,5 @@ if question:
 
     with st.chat_message("assistant"):
         st.write(ans)
+
 
