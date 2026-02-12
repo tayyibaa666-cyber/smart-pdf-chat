@@ -194,7 +194,7 @@ st.markdown("""
     /* Fix chat input text visibility */
     .stChatInput input,
     .stChatInput textarea {
-        color: #ffffff !important;
+        color: #00000 !important;
         font-size: 1.5rem !important;
     }
 
@@ -431,3 +431,4 @@ if question:
 
     with st.chat_message("assistant"):
         st.write(ans)
+
