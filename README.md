@@ -32,6 +32,8 @@ This app uses:
 - Groq API
 
 ---
+A sample PDF is already included for testing.
+Open the sample_data/ folder and upload the file to start chatting with the document.
 
 ## 📦 Installation (Local)
 
@@ -40,7 +42,4 @@ git clone https://github.com/YOUR_USERNAME/smart-pdf-chat.git
 cd smart-pdf-chat
 pip install -r requirements.txt
 
-I created a ready-to-use test document for your app.
- 
 
-upload this in your app and try
